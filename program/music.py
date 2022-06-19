@@ -40,10 +40,12 @@ async def ytdl(format: str, link: str):
 
 
 @Client.on_message(command(["تشغيل", f"play@{BOT_USERNAME}"]) & other_filters)
-
-        replied = m.reply_to_message
-        chat_id = m.chat.id
-        keyboard = InlineKeyboardMarkup(
+async def play(c: Client, m: Message):
+    await m.delete()
+    replied = m.reply_to_message
+    chat_id = m.chat.id
+    keyboard = InlineKeyboardMarkup(
+        
             [
                 [
                     InlineKeyboardButton(text="• القائمه", callback_data="cbmenu"),
