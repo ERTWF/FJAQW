@@ -33,7 +33,7 @@ async def cbstart(_, query: CallbackQuery):
                 [InlineKeyboardButton("👷‍♂ تفعيل البوت 👷‍♂", callback_data="cbhowtouse")],
                 [
                     InlineKeyboardButton("🥇 اوامر التشغيل 🥇", callback_data="cbcmds"),
-                    InlineKeyboardButton("‹المطور›", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("👨‍💻 مالك البوت 👨‍💻", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
